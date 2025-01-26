@@ -1,0 +1,23 @@
+repos:
+  - repo: local
+    hooks:
+      - id: blue
+        name: blue
+        entry: poetry run blue --check .
+        language: system
+        types: [python]
+        stages: [pre-commit]
+
+      - id: ruff
+        name: ruff
+        entry: poetry run ruff check .
+        language: system
+        types: [python]
+        stages: [pre-commit]
+
+      - id: gitlint
+        name: gitlint
+        entry: poetry run gitlint --msg-filename
+        pass_filenames: true
+        language: system
+        stages: [commit-msg]
