@@ -24,4 +24,5 @@ blue = "^0.9.1"
 ruff = "^0.9.3"
 commitizen = "^4.1.1"
 gitlint = "^0.19.1"
+pre-commit = "^4.1.0"
 
