@@ -22,4 +22,5 @@ package-mode = false
 [tool.poetry.group.dev.dependencies]
 blue = "^0.9.1"
 ruff = "^0.9.3"
+commitizen = "^4.1.1"
 
